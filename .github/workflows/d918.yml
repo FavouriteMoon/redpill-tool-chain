@@ -1,5 +1,11 @@
 name: B918
-on:
+on:.
+  workflow_dispatch:
+    inputs:
+      clean_cache:
+        description: 'Clear caches'
+        required: false
+        type: boolean
  # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
