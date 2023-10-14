@@ -352,7 +352,7 @@
       },
       "redpill_load": {
         "source_url": "https://github.com/FavouriteMoon/redpill-load.git",
-        "branch": "42218-20211021"
+        "branch": "develop"
       }
     },
     {
