@@ -18,9 +18,9 @@ RUN echo "deb http://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main co
 RUN echo "deb http://mirrors.tuna.tsinghua.edu.cn/debian-security/ buster/updates main non-free contrib" >> /etc/apt/sources.list
 
 ####2
-RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak
-RUN echo "deb http://archive.debian.org/debian/ jessie main" > /etc/apt/sources.list
-RUN echo "deb http://archive.debian.org/debian-security jessie/updates main" >> /etc/apt/sources.list
+# RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak
+# RUN echo "deb http://archive.debian.org/debian/ jessie main" > /etc/apt/sources.list
+# RUN echo "deb http://archive.debian.org/debian-security jessie/updates main" >> /etc/apt/sources.list
 
 #RUN apt-get update && \
 #    apt-get install --yes --no-install-recommends ca-certificates build-essential git libssl-dev curl cpio bspatch vim gettext bc bison flex dosfstools kmod && \
