@@ -17,7 +17,7 @@ ARG DEBIAN_FRONTEND=noninteractive
     # sed  -i "s/security.debian.org/mirrors.aliyun.com/g" /etc/apt/sources.list
 RUN echo 'deb http://archive.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
 RUN sed -i '/jessie-updates/d' /etc/apt/sources.list
-RUN apt-get -o Acquire::Check-Valid-Until=false update`
+RUN apt-get -o Acquire::Check-Valid-Until=false update
 
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends ca-certificates build-essential git libssl-dev curl cpio bspatch vim gettext bc bison flex dosfstools kmod && \
