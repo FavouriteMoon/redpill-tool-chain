@@ -26,7 +26,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 #RUN echo "deb-src http://mirrors.aliyun.com/debian jessie main contrib non-free" > /etc/apt/sources.list
 #RUN echo "deb-src http://mirrors.aliyun.com/debian jessie-proposed-updates main contrib non-free" > /etc/apt/sources.list
 
-#RUN sed -i '/jessie-updates/d' /etc/apt/sources.list
+RUN sed -i '/jessie-updates/d' /etc/apt/sources.list
+
 
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends ca-certificates build-essential git libssl-dev curl cpio bspatch vim gettext bc bison flex dosfstools kmod && \
