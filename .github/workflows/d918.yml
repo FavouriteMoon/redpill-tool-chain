@@ -52,10 +52,9 @@ jobs:
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-misc.json
           
       - name: Build docker image
-        run: ./redpill_tool_chain.sh build ds918p-6.2.4-25556
-
+        run: ./redpill_tool_chain.sh build ds918p-7.0.1-42218
       - name: Create dsm image
-        run: ./redpill_tool_chain.sh auto ds918p-6.2.4-25556
+        run: ./redpill_tool_chain.sh auto ds918p-7.0.1-42218
 
       - uses: actions/upload-artifact@v2
         with:
