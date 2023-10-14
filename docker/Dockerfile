@@ -10,19 +10,17 @@ FROM ${DOCKER_BASE_IMAGE}
 
 ARG DEBIAN_FRONTEND=noninteractive
 
+####1
 RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak
 RUN echo "deb http://mirrors.tuna.tsinghua.edu.cn/debian/ buster main non-free contrib" > /etc/apt/sources.list
 RUN echo "deb http://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main non-free contrib" >> /etc/apt/sources.list
 RUN echo "deb http://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main contrib non-free" >> /etc/apt/sources.list
-# RUN echo "deb-src http://mirrors.163.com/debian/ jessie main non-free contrib" >> /etc/apt/sources.list
-# RUN echo "deb-src http://mirrors.163.com/debian-archive/debian/ jessie-backports main non-free contrib" >> /etc/apt/sources.list
 RUN echo "deb http://mirrors.tuna.tsinghua.edu.cn/debian-security/ buster/updates main non-free contrib" >> /etc/apt/sources.list
-# RUN echo "deb-src http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib" >> /etc/apt/sources.list
 
-#RUN echo "deb [check-valid-until=no] http://cdn-fastly.deb.debian.org/debian jessie main" > /etc/apt/sources.list.d/jessie.list
-#RUN echo "deb [check-valid-until=no] http://archive.debian.org/debian jessie-backports main" > /etc/apt/sources.list.d/jessie-backports.list
-#RUN sed -i '/deb http:\/\/deb.debian.org\/debian jessie-updates main/d' /etc/apt/sources.list
-#RUN apt-get -o Acquire::Check-Valid-Until=false update
+####2
+RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak
+RUN echo "deb http://archive.debian.org/debian/ jessie main" > /etc/apt/sources.list
+RUN echo "deb http://archive.debian.org/debian-security jessie/updates main" >> /etc/apt/sources.list
 
 #RUN apt-get update && \
 #    apt-get install --yes --no-install-recommends ca-certificates build-essential git libssl-dev curl cpio bspatch vim gettext bc bison flex dosfstools kmod && \
