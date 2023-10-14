@@ -19,14 +19,12 @@ ARG DEBIAN_FRONTEND=noninteractive
 # RUN sed -i '/jessie-updates/d' /etc/apt/sources.list
 # RUN apt-get -o Acquire::Check-Valid-Until=false update
 
-RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak
+#RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak
 #RUN echo -e "deb http://mirrors.aliyun.com/debian wheezy main contrib non-free\ndeb-src http://mirrors.aliyun.com/debian wheezy main contrib non-free\ndeb http://mirrors.aliyun.com/debian wheezy-updates main contrib non-free\ndeb-src http://mirrors.aliyun.com/debian wheezy-updates main contrib non-free\ndeb http://mirrors.aliyun.com/debian-security wheezy/updates main contrib non-free\ndeb-src http://mirrors.aliyun.com/debian-security wheezy/updates main contrib non-free" > /etc/apt/sources.list
-RUN echo "deb http://mirrors.aliyun.com/debian jessie main contrib non-free" > /etc/apt/sources.list
-RUN echo "deb http://mirrors.aliyun.com/debian jessie-proposed-updates main contrib non-free" > /etc/apt/sources.list
-RUN echo "deb-src http://mirrors.aliyun.com/debian jessie main contrib non-free" > /etc/apt/sources.list
-RUN echo "deb-src http://mirrors.aliyun.com/debian jessie-proposed-updates main contrib non-free" > /etc/apt/sources.list
-#RUN echo "deb http://mirrors.aliyun.com/debian-security wheezy/updates main contrib non-free" > /etc/apt/sources.list
-#RUN echo "deb-src http://mirrors.aliyun.com/debian-security wheezy/updates main contrib non-free" > /etc/apt/sources.list
+#RUN echo "deb http://mirrors.aliyun.com/debian jessie main contrib non-free" > /etc/apt/sources.list
+#RUN echo "deb http://mirrors.aliyun.com/debian jessie-proposed-updates main contrib non-free" > /etc/apt/sources.list
+#RUN echo "deb-src http://mirrors.aliyun.com/debian jessie main contrib non-free" > /etc/apt/sources.list
+#RUN echo "deb-src http://mirrors.aliyun.com/debian jessie-proposed-updates main contrib non-free" > /etc/apt/sources.list
 
 #RUN sed -i '/jessie-updates/d' /etc/apt/sources.list
 
