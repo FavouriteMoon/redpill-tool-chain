@@ -320,11 +320,11 @@
         }
       },
       "redpill_lkm": {
-        "source_url": "https://github.com/RedPill-TTG/redpill-lkm.git",
+        "source_url": "https://github.com/FavouriteMoon/redpill-lkm.git",
         "branch": "master"
       },
       "redpill_load": {
-        "source_url": "https://github.com/RedPill-TTG/redpill-load.git",
+        "source_url": "https://github.com/FavouriteMoon/redpill-load.git",
         "branch": "master"
       }
     },
@@ -347,11 +347,11 @@
         }
       },
       "redpill_lkm": {
-        "source_url": "https://github.com/RedPill-TTG/redpill-lkm.git",
+        "source_url": "https://github.com/FavouriteMoon/redpill-lkm.git",
         "branch": "master"
       },
       "redpill_load": {
-        "source_url": "https://github.com/tossp/redpill-load.git",
+        "source_url": "https://github.com/FavouriteMoon/redpill-load.git",
         "branch": "42218-20211021"
       }
     },
@@ -374,11 +374,11 @@
         }
       },
       "redpill_lkm": {
-        "source_url": "https://github.com/RedPill-TTG/redpill-lkm.git",
+        "source_url": "https://github.com/FavouriteMoon/redpill-lkm.git",
         "branch": "master"
       },
       "redpill_load": {
-        "source_url": "https://github.com/pocopico/redpill-load.git",
+        "source_url": "https://github.com/FavouriteMoon/redpill-load.git",
         "branch": "develop"
       }
     },
