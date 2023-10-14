@@ -55,7 +55,7 @@ jobs:
         run: ./redpill_tool_chain.sh build ds918p-6.2.4-25556
 
       - name: Create dsm image
-        run: ./redpill_tool_chain.sh auto uild ds918p-6.2.4-25556
+        run: ./redpill_tool_chain.sh auto ds918p-6.2.4-25556
 
       - uses: actions/upload-artifact@v2
         with:
