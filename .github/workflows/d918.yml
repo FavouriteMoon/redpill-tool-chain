@@ -1,5 +1,5 @@
 name: B918
-on:.
+on:
   workflow_dispatch:
     inputs:
       clean_cache:
